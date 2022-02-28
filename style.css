@@ -19,23 +19,23 @@ html{
 .servicios,
 .navegacion-principal,
 .formulario{
-    scroll-snap-align: center;/*detiene y fija el scroll de la pagina*/
+    scroll-snap-align: center;                                  /*detiene y fija el scroll de la pagina*/
     scroll-snap-stop: always;
     
 }
 
-*, *:before, *:after { /*variables globales para los box sizing*/
+*, *:before, *:after {                                        /*variables globales para los box sizing*/
     box-sizing: inherit;
   }
 
 body{
-    font-size: 16px; /* 1rem = 10px */
-    font-family: 'Imbue', serif; /*tipo de fuente que se va ausar la fuente  se trajo de google*/
-    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%); /*color de la pagina degradado*/
+    font-size: 16px;                                         /* 1rem = 10px */
+    font-family: 'Imbue', serif;                             /*tipo de fuente que se va ausar la fuente  se trajo de google*/
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);                  /*color de la pagina degradado*/
 }
 
 h1{
-font-size: 3.8rem; /*Los h1 son de 38 px*/
+font-size: 3.8rem;                                           /*Los h1 son de 38 px*/
 }
 
 h2{
@@ -47,7 +47,7 @@ h3{
 }
 
 h1,h2,h3{
-    text-align: center;  /*centra todos los h*/
+    text-align: center;                                         /*centra todos los h*/
 }
 
 .titulo span{
@@ -57,7 +57,7 @@ h1,h2,h3{
 .boton{
     background-color: var(--secundario);
     color: var(--blanco);
-    padding: 1rem 3rem; /*con esta medidas da a entender 1rem 3rem 1rem 3rem para los cuatro lados*/
+    padding: 1rem 3rem;                                       /*con esta medidas da a entender 1rem 3rem 1rem 3rem para los cuatro lados*/
     margin-top: 1rem;
     font-size: 2rem;
     text-decoration: none;
@@ -69,9 +69,9 @@ h1,h2,h3{
     border: none;
 }
 
-@media(min-width:768px){/*minimo  o menor de 768 el botom se vuelve auto abarcando toda la pantalla del cel*/
+@media(min-width:768px){                             /*minimo  o menor de 768 el botom se vuelve auto abarcando toda la pantalla del cel*/
     .boton{
-        width:auto;  /*en la computadora hace el boton pequeño*/
+        width:auto;                                  /*en la computadora hace el boton pequeño*/
     }
 }
 
@@ -102,28 +102,28 @@ h1,h2,h3{
     -moz-box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.48);
     box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.48);
     background: var(--blanco) ;
-    padding: 2rem;/*para que se separen las letras de las orillas*/
+    padding: 2rem;                                          /*para que se separen las letras de las orillas*/
     border-radius: .5rem;
 }
 
 .nav-bg{
-    background-color: var(--secundario); /*se define el color del nav*/
+    background-color: var(--secundario);                    /*se define el color del nav*/
 }
 
 .navegacion-principal{
    
-    display: flex; /*se usa flex para alinear ya sea en columnas o filas row los contenidos y deveran de estar en un div*/
+    display: flex;                                           /*se usa flex para alinear ya sea en columnas o filas row los contenidos y deveran de estar en un div*/
     flex-direction: column;    
 }
 
-@media (min-width: 768px) {  /*adapta el navegador a los celulares*/
+@media (min-width: 768px) {                                   /*adapta el navegador a los celulares*/
     .navegacion-principal{
         flex-direction: row;
         justify-content: space-between;
     }
 }
 
-.navegacion-principal a{ /*son clases mas especificas utilizando las propiedades de los css a*/
+.navegacion-principal a{                                      /*son clases mas especificas utilizando las propiedades de los css a*/
     display: block;
     text-align: center;
 color: var(--blanco);
@@ -133,7 +133,7 @@ font-weight: 700;
 padding: 1rem;
 }
 
-.navegacion-principal a:hover{ /*poner la mano en la navegacion y el cambio de color*/
+.navegacion-principal a:hover{                                 /*poner la mano en la navegacion y el cambio de color*/
 background-color: var(--primario);
 color: var(--oscuro);
 }
@@ -143,28 +143,28 @@ color: var(--oscuro);
 }
 
 .hero {
-    background-image: url(hero.jpg); /*imagen */
+    background-image: url(hero.jpg);                        /*imagen */
     background-repeat: no-repeat;
-    background-size: cover;/*cubre todo el espacio*/
+    background-size: cover;                                 /*cubre todo el espacio*/
     height: 450px;
    /* padding: 20px;*/
-    position: relative; /*el padre devera de tener el relative para que el hijo pueda ubicarse  en cualquier parte siendo este absolute*/
-    margin-bottom: 2rem ; /*nos creara un espacio entre los elementos entre la imagen y mis servicios*/
+    position: relative;                                     /*el padre devera de tener el relative para que el hijo pueda ubicarse  en cualquier parte siendo este absolute*/
+    margin-bottom: 2rem ;                                   /*nos creara un espacio entre los elementos entre la imagen y mis servicios*/
 
 }
 
 .contenido-hero{
     position: absolute;
     /*background-color: rgba(0,0,0, .7);*/
-    background-color: rgb(0 0 0 / 70%); /* se realiza una opacidad sobre la imagen*/
+    background-color: rgb(0 0 0 / 70%);                  /* se realiza una opacidad sobre la imagen*/
    /* width: 2rem;
     height: 2rem;
-    bottom: 0;   //estab es otra forma de ocupar todo el espacio
+    bottom: 0;                                             //estab es otra forma de ocupar todo el espacio
     right: 0;*/
     width: 100%;
     height: 100%;
 
-    display: flex; /*todo este codigo hace que se pocisiones  al centro el contenido del div*/
+    display: flex;                                        /*todo este codigo hace que se pocisiones  al centro el contenido del div*/
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -174,11 +174,11 @@ color: var(--oscuro);
 
 
 .contenido-hero h2,
-.contenido-hero p{  /*hace que las letras se tornen blancas*/
+.contenido-hero p{                                      /*hace que las letras se tornen blancas*/
     color: var(--blanco)
 }
 
-.ubicacion{ /*ubicacion por flex de la leyenda ciudad sahagun, hidalgo*/
+.ubicacion{                                            /*ubicacion por flex de la leyenda ciudad sahagun, hidalgo*/
     display: flex;
     align-items: flex-end;
 }
@@ -187,15 +187,17 @@ color: var(--oscuro);
 @media(min-width: 768px){
  .servicios{
     display: grid;
+
    /* grid-template-columns: 300px 300px 300px;//tres formas de organizar un grid
       grid-template-columns: 33.3% 33.3% 33.3%;
       grid-template-columns: 1fr 1fr 1fr;*/
+
       grid-template-columns: repeat(3, 1fr);
-      column-gap: 1rem;/*es la separacion entre las columnas*/
+      column-gap: 1rem;                                /*es la separacion entre las columnas*/
  }
 }
 
-.servicio{ /* centra los circulos en la pagina*/
+.servicio{                                           /* centra los circulos en la pagina*/
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -207,11 +209,11 @@ align-items: center;
 }
 
 .servicio p{
-    line-height: 2;/*interlineado en los parrafos*/
+    line-height: 2;                                   /*interlineado en los parrafos*/
     text-align: center;
 }
 
-.servicio .iconos{ /*centra los iconos en los circulos*/
+.servicio .iconos{                                     /*centra los iconos en los circulos*/
     height: 15rem;
     width: 15rem;
     background-color: var(--primario);
@@ -224,14 +226,14 @@ align-items: center;
 .formulario{
 background-color: var(--gris);
 width: min(60rem, 100%);
-margin: 0 auto;/*centra el formulario*/
+margin: 0 auto;                                          /*centra el formulario*/
 padding: 2rem;
 border-radius: 1rem;
 
 }
 
 .formulario fieldset{
-border: none; /*elimina el marco  que trae popr default*/
+border: none;                                          /*elimina el marco  que trae popr default*/
 }
 
 .formulario legend{
@@ -239,7 +241,7 @@ border: none; /*elimina el marco  que trae popr default*/
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 700;
-    margin-bottom: 2rem;/*separa el titulo del la primera entrada o input*/
+    margin-bottom: 2rem;                                 /*separa el titulo del la primera entrada o input*/
     color: var(--primario);
 }
 
@@ -268,7 +270,7 @@ margin-bottom: .5rem;
 display: block;
 }
 
-/*.campo input[type="text"], //tipos de selectores
+/*.campo input[type="text"],                            //tipos de selectores
 .campo input[type="tel"]{
     background-color: red;
 }*/
