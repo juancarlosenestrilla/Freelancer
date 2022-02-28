@@ -12,7 +12,7 @@
 html{
     font-size: 62.5%;                                            /*tamaño de letras para todo el html*/
     box-sizing: border-box;
-    scroll-snap-type: y mandatory; /* el scroll devera navegar en las coordenadas "y" y no en "x" atra variable en lugar de mandatory es proximity*/
+    scroll-snap-type: y mandatory;                               /* el scroll devera navegar en las coordenadas "y" y no en "x" atra variable en lugar de mandatory es proximity*/
 }
 
 /*scroll snap*/
