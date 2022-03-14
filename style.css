@@ -31,7 +31,11 @@ html{
 body{
     font-size: 16px;                                         /* 1rem = 10px */
     font-family: 'Imbue', serif;                             /*tipo de fuente que se va ausar la fuente  se trajo de google*/
-    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);                  /*color de la pagina degradado*/
+    /*background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);     color de la pagina degradado*/
+    background: #1D976C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 h1{
@@ -138,8 +142,11 @@ background-color: var(--primario);
 color: var(--oscuro);
 }
 .contenedor{
+    
     max-width: 120rem;
     margin: 0 auto;
+   
+ 
 }
 
 .hero {
@@ -201,10 +208,14 @@ color: var(--oscuro);
 display: flex;
 flex-direction: column;
 align-items: center;
+background: #43cea2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .servicio h3{
- color: var(--secundario);
+ color: var(--blanco);
  font-weight: normal;
 }
 
